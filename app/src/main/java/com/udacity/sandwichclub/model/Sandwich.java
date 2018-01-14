@@ -73,4 +73,22 @@ public class Sandwich {
     public void setIngredients(List<String> ingredients) {
         this.ingredients = ingredients;
     }
+
+    public String getAlsoKnownAsString() {
+        StringBuffer stringBuffer = new StringBuffer();
+        for(String s : alsoKnownAs){
+            stringBuffer.append(s);
+            stringBuffer.append("\n");
+        }
+        return stringBuffer.toString();
+    }
+
+    public String getIngredientsString() {
+        StringBuffer stringBuffer = new StringBuffer();
+        for(String s : ingredients){
+            stringBuffer.append(s);
+            stringBuffer.append("\n");
+        }
+        return stringBuffer.toString();
+    }
 }
